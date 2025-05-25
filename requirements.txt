@@ -1,0 +1,5 @@
+# Basic requirements, will be expanded later
+# For now, no specific libraries needed for CLI structure
+openai
+anthropic
+google-generativeai

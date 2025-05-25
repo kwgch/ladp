@@ -1,0 +1,26 @@
+import argparse
+import json
+from .utils.config import load_api_keys
+
+def main():
+    parser = argparse.ArgumentParser(description="LADP Sample Application")
+    parser.add_argument("theme", type=str, help="The theme or question for the LLM discussion.")
+    parser.add_argument("--config", type=str, default="config.json", help="Path to the configuration file for API keys.")
+    args = parser.parse_args()
+
+    print(f"LADP App Initialized")
+    print(f"Theme/Question: {args.theme}")
+
+    api_keys = load_api_keys(args.config)
+    if not api_keys:
+        print("Could not load API keys. Please check your config file.")
+        return
+
+    print("API keys loaded successfully.")
+    # Further application logic will go here
+    # For now, just print the keys found (omitting actual values for security)
+    print(f"Available API key sections: {list(api_keys.keys())}")
+
+
+if __name__ == "__main__":
+    main()
