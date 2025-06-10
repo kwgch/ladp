@@ -32,6 +32,8 @@ tmux
 ```bash
 claude --dangerously-skip-permissions
 ```
+>[!WARNING]
+>`--dangerously-skip-permissions` Use at your own risk!
 
 ### 4. Initialize the system (prompt)
 ```bash
