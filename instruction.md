@@ -321,3 +321,12 @@ Instructions from here
 "Specific task here"
 
 First, proceed while checking operation to ensure the sent prompt is confirmed with Enter and a response is returned from Claude.
+
+3. After the discussion is complete, create a comprehensive report summarizing:
+   - Key insights from each pane
+   - Common themes and patterns identified
+   - Synthesis of ideas across all perspectives
+   - Practical applications and recommendations
+   - Meta-insights about the collaborative process itself
+
+4. Save the report as a separate file (e.g., `discussion_report.md`) and provide a concise summary of the main findings.
